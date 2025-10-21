@@ -42,21 +42,21 @@ layers:
   - LALT
   - {t: SPACE, h: Num}
   - {t: SPACE, h: Fnc}
-  - {t: BACKSPACE, h: Num}
-  - {t: ENTER, h: BT}
+  - BACKSPACE
+  - {t: ENTER, h: Fnc}
   - MINUS
   - EQUAL
-  - DELETE
+  - {t: DELETE, h: BT}
   - LEFT
   - UP
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   Num:
@@ -84,7 +84,7 @@ layers:
   - F9
   - BSLH
   - {t: ▽, type: trans}
-  - {t: SPACE, h: LSHFT}
+  - {t: ▽, type: trans}
   - BACKSPACE
   - DEL
   - {t: ▽, type: trans}
@@ -338,10 +338,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LEFT
   - UP
   - SPACE
