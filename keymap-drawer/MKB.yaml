@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BACKSPACE
+  - MINUS
   - TAB
   - A
   - S
@@ -23,8 +23,8 @@ layers:
   - J
   - K
   - L
-  - SEMI
-  - ENTER
+  - SQT
+  - EQUAL
   - LSHFT
   - Z
   - X
@@ -34,8 +34,8 @@ layers:
   - N
   - M
   - COMMA
-  - DOT
-  - SQT
+  - COMMA
+  - BACKSLASH
   - FSLH
   - LEFT CONTROL
   - LGUI
@@ -44,8 +44,8 @@ layers:
   - {t: SPACE, h: Fnc}
   - BACKSPACE
   - {t: ENTER, h: Fnc}
-  - MINUS
-  - EQUAL
+  - SEMI
+  - CARET
   - {t: DELETE, h: BT}
   - LEFT
   - UP
