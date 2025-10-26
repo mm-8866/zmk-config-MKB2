@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: MKB}
 layers:
   Def:
-  - HOME
+  - ESCAPE
   - Q
   - W
   - E
@@ -41,7 +41,7 @@ layers:
   - LGUI
   - LALT
   - {t: SPACE, h: Num}
-  - {t: SPACE, h: Fnc}
+  - {t: HOME, h: Fnc}
   - BACKSPACE
   - {t: ENTER, h: Fnc}
   - SEMI
