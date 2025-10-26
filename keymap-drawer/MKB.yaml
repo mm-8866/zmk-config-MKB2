@@ -111,11 +111,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   Fnc:
@@ -170,11 +170,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   Mouse:
@@ -229,11 +229,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   Scr:
@@ -288,11 +288,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   BT:
@@ -347,10 +347,10 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
