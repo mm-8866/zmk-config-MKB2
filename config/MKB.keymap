@@ -1,6 +1,5 @@
 // #include <layout_shift.dtsi>
 
-
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -14,8 +13,6 @@
 #define SCROLL 4
 #define BT 5
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-
 &mt {
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -23,19 +20,7 @@
     require-prior-idle-ms = <150>;
 };
 
-
-
-
 / {
-    behaviors {
-        encoder_msc_down_up: encoder_msc_down_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>;
-        };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,7 +35,9 @@
                                        &kp A                                                                 &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
@@ -59,12 +46,14 @@
 &trans    &kp N1         &kp N2     &kp N3    &kp N4     &kp N5         &kp N6     &kp N7          &kp N8        &kp N9     &kp N0          &trans
 &trans    &kp F1         &kp F2     &kp F3    &kp F4     &kp F5         &kp F6     &kp F7          &kp F8        &kp F9     &kp BSLH        &trans
 &trans    &kp BACKSPACE  &kp DEL    &trans    &trans     &trans         &trans     &kp FSLH        &kp SEMI      &kp SQT    &trans          &trans
-&trans    &trans         &kp ENTER            &kp ENTER  &kp ENTER      &kp ENTER  &kp ENTER                     &trans     &trans          &trans
+&trans    &kp ENTER      &kp ENTER            &kp ENTER  &kp ENTER      &kp ENTER  &kp ENTER                     &trans     &trans          &trans
 &kp LEFT  &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                            &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                     &kp A                                                          &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
@@ -78,7 +67,9 @@
                                 &kp A                                                           &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         mouse_layer {
@@ -92,7 +83,9 @@
                              &kp A                                                    &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         scroll_layer {
@@ -106,7 +99,9 @@
                              &kp A                                                    &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         bt_layer {
@@ -120,8 +115,9 @@
                              &kp A                                                          &kp B
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
-
