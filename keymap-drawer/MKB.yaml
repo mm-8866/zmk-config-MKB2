@@ -97,7 +97,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - {t: ▽, type: trans}
   - ENTER
   - {t: ENTER, type: held}
   - ENTER
