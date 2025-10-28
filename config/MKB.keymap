@@ -1,5 +1,6 @@
 // #include <layout_shift.dtsi>
 
+
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -35,9 +36,7 @@
                                        &kp A                                                                 &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
@@ -51,9 +50,7 @@
                                     &kp A                                                          &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
@@ -67,9 +64,7 @@
                                 &kp A                                                           &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         mouse_layer {
@@ -83,9 +78,7 @@
                              &kp A                                                    &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         scroll_layer {
@@ -99,9 +92,7 @@
                              &kp A                                                    &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         bt_layer {
@@ -115,9 +106,7 @@
                              &kp A                                                          &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
