@@ -5,6 +5,11 @@
 #include "MKB_pinctrl_L.dtsi"
 #include "MKB.dtsi"
 
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+
 / {
     chosen {
         zephyr,display = &oled;
@@ -149,3 +154,4 @@
         prechargep = <0x22>;
     };
 };
+
