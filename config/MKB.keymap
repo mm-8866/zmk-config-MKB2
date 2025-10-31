@@ -62,8 +62,8 @@
 &kp LEFT  &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                            &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                     &kp A                                                          &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         function_layer {
@@ -76,8 +76,8 @@
 &kp LEFT  &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                            &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                 &kp A                                                           &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         mouse_layer {
@@ -90,8 +90,8 @@
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER  &kp DOWN_ARROW  &kp RIGHT_ARROW
                              &kp A                                                    &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         scroll_layer {
@@ -104,8 +104,8 @@
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER  &kp DOWN_ARROW  &kp RIGHT_ARROW
                              &kp A                                                    &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         bt_layer {
@@ -118,11 +118,12 @@
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                            &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER     &kp DOWN_ARROW  &kp RIGHT_ARROW
                              &kp A                                                          &kp B
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
+
 
 
 
