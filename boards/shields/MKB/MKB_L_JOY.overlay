@@ -10,7 +10,7 @@
 &left_encoder {
     a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <3>;
+    steps = <24>;
     status = "okay";
 };
 
@@ -60,4 +60,5 @@
             input-processors = <&zip_xy_scaler 1 16>;
         };
     };
+
 };
