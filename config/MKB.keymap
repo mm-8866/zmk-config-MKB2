@@ -1,5 +1,6 @@
 // #include <layout_shift.dtsi>
 
+
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -34,10 +35,7 @@
 &kp LEFT          &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                   &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER   &kp DOWN_ARROW  &kp RIGHT_ARROW
                                        &kp A                                                                 &kp B
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
@@ -51,9 +49,7 @@
                                     &kp A                                                          &kp B
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
