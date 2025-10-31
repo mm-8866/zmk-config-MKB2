@@ -48,7 +48,7 @@
 &kp LEFT          &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                   &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER   &kp DOWN_ARROW  &kp RIGHT_ARROW
                                        &kp A                                                                 &kp B
             >;
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&encoder_msc_down_up &&encoder_msc_down_up>;
         };
 
         num_layer {
@@ -122,5 +122,6 @@
         };
     };
 };
+
 
 
